@@ -93,10 +93,13 @@ var students = ["Solome", "Marvin", "Annah", "Mark", "Asiimwe", "Jonah", "Irene"
 const bodmas = (num1, num2, num3, num4, num5) => (num1 * num2) - (num3 + num4 + num5)
   console.log(bodmas (8,7,6,5,4))
 
-//dealing with function parameters that have a default values(given values to be used when a user doesn't assign)
+//dealing with function parameters that have a default values(given values to be used when a user 
+//doesn't assign)
+
 // const bodmas = (num1, num2, num3 = 0.05) => (num1 * num2) - num3
 // console.log(bodmas(5, 5))
 
+console.log("=====================================================================")
   //Access a return from a function and use it in another function
    const gradeAssignment =(mark) => {
       if(mark == 100){
@@ -112,3 +115,42 @@ const bodmas = (num1, num2, num3, num4, num5) => (num1 * num2) - (num3 + num4 + 
          return "F"
       }
    } 
+
+   // const remarks = () =>{
+   //    const grade = gradeAssignment(100)
+   //       if(grade == "A"){
+   //          console.log("Excellent")
+   //       }
+   //       else if (grade == "C"){
+   //          console.log("Good")
+   //       }
+   //       else if (grade == "E"){
+   //          console.log(Fair)
+   //       }
+   //       else {
+   //          console.log("Fail")
+   //       }
+   // } 
+   // remarks()
+
+   //Refactor remarks function
+
+      const remarks = (score = 50) =>{
+         const grade = gradeAssignment(score)
+         if(grade == "A"){
+            console.log("Excellent")
+         }
+         else if (grade == "C"){
+            console.log("Good")
+         }
+         else if (grade == "E"){
+            console.log("Fair")
+         }
+         else {
+            console.log("Fail")
+         }
+   } 
+   remarks()
+   remarks(70)
+   remarks(100)
+   remarks(20)
