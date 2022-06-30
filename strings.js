@@ -1,5 +1,5 @@
 let name ="Liz Mutesi";
-//concatenet
+//concatenate
 var student ="My name is ";
 var person ="Liz Mutesi";
 console.log(student + person)

@@ -9,6 +9,7 @@ myname="ElizabethMutesi";
 var car ="benz";
 var year ="2022"
 var origin ="I come from Gulu";
+console.log(origin)
 
 //number data type
 var plate = 200;

@@ -1,5 +1,5 @@
 //single word variable name
-var school = "refactoty";
+var school = "refactory";
 //multi word variable name
 var dogName = "Napoleon";
 /*camel case because we can't put as space in a variable 
@@ -28,7 +28,7 @@ var house ="flat";
 console.log(house);
 
 const car ="benz";
-console.log(benz)
+console.log(car)
 
 // const car ="toyota"
 // console.log(benz)
@@ -38,3 +38,4 @@ let is only accessible within the code block where its written
 var is accessible outside*/
 
 let story ="let me goto school with a case";
+console.log(story)
