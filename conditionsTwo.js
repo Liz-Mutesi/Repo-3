@@ -31,4 +31,5 @@
 
 // ||	Logical OR: true if either of the operands/boolean values is true. evaluates to false if both are false	true || false; // true
 
-// !	Logical NOT: true if the operand is false and vice-versa.	!true; // false
+// !	Logical NOT: true if the operand is false and vice-versa.	!true; // false !false; //true
+

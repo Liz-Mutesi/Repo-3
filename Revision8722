@@ -1,0 +1,65 @@
+//               0, 1, 2, 3, 4, 5
+
+const people = [
+    { //0
+        firstname: 'Asiimwe',
+        surname: 'Doe',
+        age: 24,
+        nationality: 'Ugandan',
+        gender: 'Male',
+        designation: 'Software Developer',
+        address: 'Kyebando',
+        maritalStatus: 'Married'
+    },
+    { //1
+        firstname: 'Liz',
+        surname: 'Mutesi',
+        age: 28,
+        nationality: 'Ugandan',
+        gender: 'Female',
+        designation: 'Software Developer',
+        address: 'Bwaise',
+        maritalStatus: 'Married'
+    },
+    { //2
+        firstname: 'Jonah',
+        surname: 'Jenz',
+        age: 28,
+        nationality: 'Ugandan',
+        gender: 'Female',
+        designation: 'Software Developer',
+        address: 'Bwaise',
+        maritalStatus: 'Married'
+    }
+]
+
+// console.log(people[2]);
+// show firstname, surname, gender
+// console.log(people)
+
+// client reqiurements =>  Show firstname, surname, gender
+
+// 1. create function
+// 2. create an empty array(new data)
+// 3. create  a for loop (iterations)
+// 4. push my new structured data to the newData array
+// 5. upon finishing all iterations
+// 6. function will return my new array
+
+function peopleManupilation() {
+    const processedPeopleData = [];
+
+    for (let index = 0; index < people.length; index++) {
+        const newData = {
+            firstname: people[index].firstname,
+            surname: people[index].surname,
+            gender: people[index].gender
+        }
+
+        processedPeopleData.push(newData)
+    }
+
+    return processedPeopleData;
+}
+
+console.log(peopleManupilation())

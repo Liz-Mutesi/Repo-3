@@ -65,3 +65,21 @@ else {
 }
 }
     shirt(30)
+    console.log("=================================================================================")
+
+    function days(daysOfTheMonth){
+        if(daysOfTheMonth >= 31){
+            console.log("January", "March", "May", "July", "August", "October", "December")
+        }
+        else if(daysOfTheMonth == 30){
+            console.log("April", "June", "September", "November")
+        }
+        else{
+            console.log("February")
+        }
+    }
+    days(28)
+console.log("=====================================================================================")
+
+
+    
