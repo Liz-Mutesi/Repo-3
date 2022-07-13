@@ -1,13 +1,53 @@
-<!DOCTYPE html>
+<!-- id
+name
+tag name
+class name
+query selector -->
+
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <h1>My First Javascript</h1>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div>
+      <p id="para1">this is the first paragraph</p>
+      <small><span id="textMessage"></span></small>
+    </div>
+
+    <div>
+      <p name="para2">this is the name access paragraph</p>
+    </div>
+    <div>
+      <label>this is the name access paragraph</label>
+      <label>this is the name access paragraph2</label>
+    </div>
+
+    <div>
+      <p class="para3">Access element by class name</p>
+    </div>
+    <script>
+        document.getElementById("para1").style.color = "red";
+        document.getElementById("para1").style.border = "2px solid red";
+        // document.getElementById("para1").style.fontSize="2rem";
+        document.getElementById("textMessage").innerHTML = "This is an error";
+  
+        //   document.getElementsByName("para2").style.color = "blue";
+        document.getElementsByName("para2")[0].style.color = "blue";
+  
+        document.getElementsByTagName("label")[1].style.color = "green";
+        const labels = getElementsByTagName("para3")[0] .style.color ="blue";
+    for (let i =0; i < labels.length; i++){
+        labels[1] .style.color ="green"
+        labels[i].style.fontSize = "20px"
+    }
+    labels[2].style.color="Orange"
+        document.getElementsByClassName("para3")[0].style.color = "purple";
+      </script>
 </body>
+
 </html>
+
