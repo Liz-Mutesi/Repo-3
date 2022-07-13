@@ -7,6 +7,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="demo">
+        <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+<!-- <div id="demo1">
+    Javascript in HTML 
+
+<button onclick="bot()">CLICK</button>
+</div> -->
+<div class="demo1">
+    Javascript in HTML 
+
+<button onclick="changeColor()">CLICK</button>
+</div>
+    </div>
+    <div id="demo2">
+<button onclick="alert('Welcome User')">ALERT</button>
+    </div>
+    <div id="demo10">
+<button id="demo5" onclick="user()">demo5</button>
+<button id="demo6" onclick="user()">demo6</button>
+    </div>
+    <script>
+        //  function changeColor() {
+        //  document.getElementsByClassName("demo1") .style.color = "red"
+        //  }
+        // function bot(){
+        //     document.getElementById("demo1").style.display = "none"
+        // }
+            function user(){
+                if (this.id== "demo5"){
+                document.getElementById("demo5").style.backgroundColor ="wheat"}
+           else{
+            document.getElementById("demo6").style.backgroundColor = "yellow"
+           }
+            }
+        </script>
 </body>
 </html>
