@@ -1,7 +1,7 @@
 function validationForm(){
-    let username = document.forms["RegForm"]["Name"];
-    let email = document.forms["RegForm"]["Email"];
-    let phone = document.forms["RegForm"]["Telephone"];
+    let username = document.forms["RegForm"] ["Name"];
+    let email = document.forms["RegForm"] ["Email"];
+    let phone = document.forms["RegForm"] ["Telephone"];
     let select = document.forms["RegForm"]["Subject"];
     let pass = document.forms["RegForm"]["Password"];
 
@@ -12,36 +12,37 @@ function validationForm(){
 
     alphaNumeric = /^[A-Za-z0-9]+$/     //expression that takes on letters and numbers only not special characters
 
-    //let username = document.forms["RegForm"]["username"];
-    
-    if(username.value == "" || !nameRegex.test(username.value)){
+    // let nameerr = document.forms["RegForm"] ["nameerr"];
+    if (username.value == "" || !nameRegex.test(username.value)){
         alert("Please enter your name with alphabets only");
         username.style.border = "2px solid red";
-        username.innerHTML = "Please enter your name";
-        username.focus();
+        username.innerHTML = "Please enter your name"
+        // username.focus();
         return false;
     }
-    if(email.value == "" || !emailRegex.test(email.value)){
-        alert("Please enter your email");
+    
+    else {
+        username.style.border = "2px solid green";
+    }
+    if (email.value == "" || !emailRegex.test(email.value)){
+        // alert("Please enter your email");
         email.style.border = "2px solid red";
         email.innerHTML = "Please enter your email"
         // email.focus();
-        email.focus();
+        return false;
     }
-    // if(email.value.indexOf("@", 0)<0 || email.value.indexOf ("."),0 <0 ){
-    //     alert("Please enter a valid email address");
-    //     email.focus();
+    // if (email.value.indexOf("@", 0)<0 || email.value.indexOf(".",0)<0){
+    //     // alert("Please enter a valid email address");
+    //     email.style.border = "2px solid red";
+    //     email.innerHTML = "Please enter a valid email address"
+    //     // email.focus();
     //     return false;
     // }
+    
     else {
         email.style.border = "2px solid green";
     }
 
-    if(phone.value == "" || phone.value.length != 10){
-        alert("Please enter your valid phone number");
-        username.focus();
-        return false;
-    }
     if (pass.value == "" || !passRegex.test(pass.value)) {
         // alert("Please enter your password");
         pass.style.border = "2px solid red";
@@ -72,7 +73,5 @@ function validationForm(){
         select.style.border = "2px solid green";
       }
       return true;
-    
-}
     
 }
