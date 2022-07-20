@@ -15,37 +15,31 @@ function validationForm(){
     //let username = document.forms["RegForm"]["username"];
     
     if(username.value == "" || !nameRegex.test(username.value)){
-        alert("Please enter your name with alphabets only");
+        // alert("Please enter your name with alphabets only");
         username.style.border = "2px solid red";
         username.innerHTML = "Please enter your name";
-        username.focus();
+        // username.focus();
         return false;
     }
     if(email.value == "" || !emailRegex.test(email.value)){
-        alert("Please enter your email");
+        // alert("Please enter your email");
         email.style.border = "2px solid red";
         email.innerHTML = "Please enter your email"
         // email.focus();
-        email.focus();
+        // email.focus();
     }
-    // if(email.value.indexOf("@", 0)<0 || email.value.indexOf ("."),0 <0 ){
+    if(email.value.indexOf("@", 0)<0 || email.value.indexOf ("."),0 <0 ){
     //     alert("Please enter a valid email address");
     //     email.focus();
-    //     return false;
-    // }
+       return false;
+    }
     else {
         email.style.border = "2px solid green";
-    }
-
-    if(phone.value == "" || phone.value.length != 10){
-        alert("Please enter your valid phone number");
-        username.focus();
-        return false;
     }
     if (pass.value == "" || !passRegex.test(pass.value)) {
         // alert("Please enter your password");
         pass.style.border = "2px solid red";
-        pass.focus();
+        // pass.focus();
         return false;
       }
       else {
@@ -53,7 +47,7 @@ function validationForm(){
       }
     
     if (phone.value == "" || phone.value.length  != 10 || !numberRegex.test(phone.value)){
-        alert("Please enter a valid phone number");
+        // alert("Please enter a valid phone number");
         phone.style.border = "2px solid red";
         // phone.focus();
         return false;
@@ -75,4 +69,3 @@ function validationForm(){
     
 }
     
-}
