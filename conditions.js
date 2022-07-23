@@ -81,5 +81,28 @@ else {
     days(28)
 console.log("=====================================================================================")
 
+// Revision conditions
 
-    
+const x = 6;
+const y = 10;
+
+if(x > 5  || y > 10) {
+    console.log("x is greater than 5 or y is greater than 10");
+}
+// ternary operator
+
+const p = 4
+
+const color = p > 10 ? "red" : "blue"
+
+switch(color){
+    case "red":
+    console.log("color is red");
+    break;
+    case "blue":
+    console.log("color is blue");
+    break;
+    default:
+    console.log("color is not red or blue");
+
+}
