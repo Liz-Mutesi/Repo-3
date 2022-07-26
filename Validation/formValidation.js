@@ -15,10 +15,10 @@ function validationForm(){
     //let username = document.forms["RegForm"]["username"];
     
     if(username.value == "" || !nameRegex.test(username.value)){
-        // alert("Please enter your name with alphabets only");
+        //alert("Please enter your name with alphabets only");
         username.style.border = "2px solid red";
         username.innerHTML = "Please enter your name";
-        // username.focus();
+        //username.focus();
         return false;
     }
     if(email.value == "" || !emailRegex.test(email.value)){

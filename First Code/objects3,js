@@ -1,0 +1,20 @@
+// merging objects
+const computerDetails = {
+    name: 'Mac',
+    model: 2020,
+    os: 'catalina',
+  };
+
+
+  const computerPeripherals = {
+    hasMouse: true,
+    hasKeyboard: true,
+  };
+  
+  const mergedObject = Object.assign(computerDetails, computerPeripherals)
+  //console.log(mergedObject)
+
+  const mergedObject2 = {...computerDetails, ...computerPeripherals} // spread operator
+  console.log(mergedObject)
+
+  
